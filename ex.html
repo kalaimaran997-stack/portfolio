@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+    /* .boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr  1fr 1fr 1fr 1fr;
+        gap: 20px;
+        width: 500px;
+        grid-template-areas: 
+        
+        "one four four seven seven ten"
+        " two five five eight eight eleven"
+        "three three six six nine nine"
+        ;
+
+    }
+
+
+
+    .boxes div{
+        background-color: aqua;
+        padding: 30px;
+    }
+    .box1{
+        grid-area: one;
+    }
+     .box2{
+        grid-area: two;
+    }
+     .box3{
+        grid-area:three;
+    }
+     .box4{
+        grid-area:four;
+    }
+     .box5{
+        grid-area:five;
+    }
+     .box6{
+        grid-area:six;
+    }
+     .box7{
+        grid-area:seven;
+    }
+     .box8{
+        grid-area: eight;
+    }
+     .box9{
+        grid-area: nine;
+    }
+     .box10{
+        grid-area: ten;
+    }
+     .box11{
+        grid-area: eleven;
+    } */
+     * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #101418;
+  background:white;
+}
+
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align-last: justify;
+  padding: 10px 50px;
+  border-bottom: 5px solid gray;
+  background: white;
+}
+
+nav{
+    display: flex;
+    gap: 60px; 
+    
+}
+ .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+} 
+.logo i{
+    color:green;
+}
+.nav{
+  display: flex;
+  gap: 60px;
+
+}
+nav a{
+  color: #101418;
+  text-decoration: none;
+     font-size: 16px;
+     font-weight: bold;
+
+}
+    .gallary{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 15px;
+        width: 90%;
+        grid-template-areas: 
+        "one two three three"
+        "four two six seven"
+        "eight five six nine"
+        "eight ten eleven twelve"
+        ;
+    
+    }
+    .img1{
+        grid-area: one;
+    }
+      .img2{
+        grid-area: two;
+    }
+
+      .img3{
+        grid-area: three;
+    }
+
+      .img4{
+        grid-area: four;
+    }
+
+      .img5{
+        grid-area: five;
+    }
+
+      .img6{
+        grid-area:six;
+    }
+    
+      .img7{
+        grid-area:seven;
+    }
+
+      .img8{
+        grid-area:eight;
+    }
+
+      .img9{
+        grid-area:nine;
+    }
+
+      .img10{
+        grid-area:ten;
+    }
+
+      .img11{
+        grid-area:eleven;
+    }
+
+      .img12{
+        grid-area:twelve;
+    }
+
+.gallary img{
+  display: grid;
+    width: 100%;
+    height:100%; 
+    object-fit: cover;
+    border-radius: 12px;
+     display: block; 
+
+}
+.star{
+  background-color: goldenrod;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 50%;
+  animation: movestare linear 4s infinite;
+  
+}
+@keyframes movestare{
+  
+}
+
+</style>
+<body>
+
+    <!-- <div class="boxes">
+        <div class="box1">box1</div>
+         <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+        <div class="box7">box7</div>
+        <div class="box8">box8</div>
+        <div class="box9">box9</div>
+        <div class="box10">box10</div>
+       <div class="box11">box11</div>
+    </div> -->
+    
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <strong>ShopEase</strong>
+    </div>
+
+    <nav>
+      <a href="#Home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#deals">Deals</a>
+      <a href="#About">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <input type="text" placeholder="Search for products...">
+      <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <i class="fa-regular fa-heart"></i>
+      <span class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <b>2</b>
+      </span>
+      <span>Login</span>
+    </div>
+  </header>
+    
+    <div class="gallary">
+        <div class="img1">
+            <img src="watch.jpg">
+        </div>
+          <div class="img2">
+            <img src="cooker.jpg">
+        </div>
+          <div class="img3">
+            <img src="head set 1.jpg">
+        </div>
+          <div class="img4">
+            <img src="mackup.jpg">
+        </div>
+          <div class="img5">
+            <img src="ladies bag.jpg">
+        </div>
+          <div class="img6">
+            <img src="groot.jpg">
+        </div>
+        <div class="img7">
+          <img src="basket ball.jpg">
+        </div>
+        <div class="img8">
+          <img src="cooker.jpg">
+        </div>
+        <div class="img9">
+          <img src="head set 1.jpg">
+        </div>
+        <div class="img10">
+          <img src="mackup.jpg">
+        </div>
+        <div class="img11">
+          <img src="cooker1.jpg">
+        </div>
+        <div class="img12">
+          <img src="books.jpg">
+        </div>
+          
+
+    </div>
+    <div class="star"></div>
+</body>
+</html>

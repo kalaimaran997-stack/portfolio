@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #101418;
+  background:white;
+}
+
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align-last: justify;
+  padding: 10px 50px;
+  border-bottom: 5px solid gray;
+  background: white;
+}
+
+nav{
+    display: flex;
+    gap: 60px; 
+    
+}
+ .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+} 
+.logo i{
+    color:green;
+}
+.nav{
+  display: flex;
+  gap: 60px;
+
+}
+nav a{
+  color: #101418;
+  text-decoration: none;
+     font-size: 16px;
+     font-weight: bold;
+
+}
+.header-right{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.header-right input{
+  width: 160px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+  margin-left: -18px;
+  padding: 10px 14px;
+  color: white;
+  border: none;
+  background: lightgreen;
+  border-radius: 0 5px 5px 0;
+}
+.cart{
+  position: relative;
+}
+
+.cart b {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #219653;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 3px 5px;
+}
+
+.hero {
+  min-height: 330px;
+  padding: 20px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background: #f4faf6;
+}
+
+.hero-text {
+  z-index: 2;
+}
+
+.sale-text {
+  color: #32834d;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.hero h1 span {
+  color: #268b4d;
+}
+
+.hero-text > p:not(.sale-text) {
+  color: #707070;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 13px;
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hero-buttons button,
+.product-card button {
+  border: none;
+  background: #279653;
+  color: white;
+  border-radius: 5px;
+  padding: 11px 25px;
+  font-weight: bold;
+}
+
+.outline-btn {
+  color: #397152 ;
+  background: transparent ;
+  border: 1px solid #76a98a ;
+}
+.hero-img{
+  width: 50%;
+  height: 300px;
+  position: relative;
+}

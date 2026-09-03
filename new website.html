@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Online Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="new.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <strong>ShopEase</strong>
+    </div>
+
+    <nav>
+      <a href="#Home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#deals">Deals</a>
+      <a href="#About">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <input type="text" placeholder="Search for products...">
+      <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <i class="fa-regular fa-heart"></i>
+      <span class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <b>2</b>
+      </span>
+      <span>Login</span>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="sale-text">SUMMER SALE IS LIVE</p>
+        <h1>Find Everything<br>You <span>Need</span></h1>
+        <p>Top brands, best prices and fast delivery.<br>
+          Shop now and get up to 50% off!</p>
+
+        <div class="hero-buttons">
+          <button>Shop Now</button>
+          <button class="outline-btn">Explore Deals</button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="green-circle"></div>
+        <div class="discount">UP TO<br><strong>50%</strong><br>OFF</div>
+        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=650&q=80"
+          alt="Backpack">
+        <img class="shoe"
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80"
+          alt="Sneaker">
+      </div>
+    </section>
+
+    <section id="categories" class="section">
+      <h2>Shop by Category</h2>
+
+      <div class="categories">
+        <div class="category">
+          <i class="fa-solid fa-headphones"></i>
+          <p>Electronics</p>
+        </div>
+
+        <div class="category">
+          <i class="fa-solid fa-shirt"></i>
+          <p>Fashion</p>
+        </div>
+
+        <div class="category">
+          <i class="fa-solid fa-kitchen-set"></i>
+          <p>Home & Kitchen</p>
+        </div>
+
+        <div class="category">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <p>Beauty</p>
+        </div>
+
+        <div class="category">
+          <i class="fa-solid fa-futbol"></i>
+          <p>Sports</p>
+        </div>
+
+        <div class="category">
+          <i class="fa-solid fa-book"></i>
+          <p>Books</p>
+        </div>
+
+        <div class="category">
+          <i class="fa-solid fa-teddy-bear"></i>
+          <p>Toys</p>
+        </div>
+
+        <div class="category">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <p>More</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="section products-section">
+      <div class="section-heading">
+        <h2>Best Selling Products</h2>
+        <button class="view-btn">View All</button>
+      </div>
+
+      <div class="products">
+
+        <div class="product-card">
+          <i class="fa-regular fa-heart favourite"></i>
+          <img src="watch.jpg"alt="Smart Watch">
+          <h3>Smart Watch</h3>
+          <p class="price">₹2,499 <del>₹3,999</del></p>
+          <p class="rating">★ 4.5 (128)</p>
+          <button onclick="addToCart('Smart Watch')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <i class="fa-regular fa-heart favourite"></i>
+          <img src="head set 1.jpg" alt="Wireless Earbuds">
+          <h3>Wireless Earbuds</h3>
+          <p class="price">₹1,499 <del>₹2,499</del></p>
+          <p class="rating">★ 4.3 (98)</p>
+          <button onclick="addToCart('Wireless Earbuds')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <i class="fa-regular fa-heart favourite"></i>
+          <img src="bag2.jpg" alt="Backpack">
+          <h3>Backpack</h3>
+          <p class="price">₹899 <del>₹1,499</del></p>
+          <p class="rating">★ 4.6 (76)</p>
+          <button onclick="addToCart('Backpack')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <i class="fa-regular fa-heart favourite"></i>
+          <img src="t-shirt.jpg"
+            alt="T-Shirt">
+          <h3>T-shirt</h3>
+          <p class="price">₹499 <del>₹2,999</del></p>
+          <p class="rating">★ 4.4 (156)</p>
+          <button onclick="addToCart('T-Shirt')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <i class="fa-regular fa-heart favourite"></i>
+          <img src="groot.jpg"
+            alt="toys">
+          <h3>Groot Toy</h3>
+          <p class="price">₹799 <del>₹1,299</del></p>
+          <p class="rating">★ 4.2 (63)</p>
+          <button onclick="addToCart('Toys')">Add to Cart</button>
+        </div>
+          <div class="product-card">
+          <i class="fa-regular fa-heart favourite"></i>
+          <img src="treddy.jpg"
+            alt="toys">
+          <h3>Teaddy</h3>
+          <p class="price">₹599 <del>₹1,299</del></p>
+          <p class="rating">★ 4.2 (63)</p>
+          <button onclick="addToCart('Teaddy')">Add to Cart</button>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section id="deals" class="offer">
+      <div class="offer-box">
+        <strong>EXTRA<br><span>10% OFF</span></strong>
+        <small>ON FIRST ORDER</small>
+      </div>
+
+      <div>
+        <h2>Special Offer!</h2>
+        <p>Get extra 10% off on your first order.</p>
+        <p>Use code: <strong>WELCOME10</strong></p>
+      </div>
+
+      <div class="gift">🎁</div>
+    </section>
+
+    <section class="services">
+      <div>
+        <i class="fa-solid fa-truck"></i>
+        <strong>Free Shipping</strong>
+        <small>On orders above ₹499</small>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-camera-rotate"></i>
+        <strong>Easy Returns</strong>
+        <small>30 days return policy</small>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-shield-halved"></i>
+        <strong>Secure Payment</strong>
+        <small>100% secure checkout</small>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-headset"></i>
+        <strong>24/7 Support</strong>
+        <small>We're here to help</small>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <div class="logo">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <strong>ShopEase</strong>
+        </div>
+        <p>Your one-stop shop for everything<br>
+          you need. Quality products,<br>
+          best prices and quick delivery.</p>
+      </div>
+
+      <div>
+        <h3>Subscribe to our newsletter</h3>
+        <p>Get the latest updates on new products and upcoming sales.</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <p>Home</p>
+        <p>Shop</p>
+        <p>Categories</p>
+        <p>Deals</p>
+        <p>About Us</p>
+        <p>Contact</p>
+      </div>
+
+      <div>
+        <h3>Customer Service</h3>
+        <p>My Account</p>
+        <p>Orders & Returns</p>
+        <p>Shipping Policy</p>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+        <p>FAQ</p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © 2025 ShopEase. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
