@@ -376,11 +376,11 @@
       .skills-grid{grid-template-columns:repeat(3,1fr);}
       .projects-grid{grid-template-columns:1fr;}
       .info-grid{grid-template-columns:repeat(2,1fr);}
-      .nav-links{display:none;}
+      .nav-links{display:inline-flexbox;}
     }
     @media (max-width: 640px){
       .skills-grid,.info-grid,.row{grid-template-columns:1fr;}
-      .container{width:min(94%,1180px);}
+      .container{width:min(100%,1180px);}
       .hero{padding-top:20px;}
       .hero-grid{padding-bottom:56px;}
     }
