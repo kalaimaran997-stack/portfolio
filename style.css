@@ -90,6 +90,8 @@
     .nav-links a:hover{opacity:1}
     .nav-links a:hover::after{width:100%}
 
+    
+
     .btn{
       display:inline-flex;
       align-items:center;
@@ -117,7 +119,7 @@
       background-image:
         radial-gradient(circle at 15% 20%, rgba(139,92,246,.45), transparent 25%),
         radial-gradient(circle at 85% 25%, rgba(59,130,246,.4), transparent 24%),
-        linear-gradient(180deg, rgba(11,18,45,.92) 0%, rgba(16,26,63,.92) 55%, #f6f7fb 55%, #f6f7fb 100%),
+        linear-gradient(180deg, rgba(20, 51, 179, 0.92) 0%, rgba(16,26,63,.92) 55%, #f6f7fb 55%, #f6f7fb 100%),
         url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&q=80&auto=format&fit=crop");
       background-repeat:no-repeat;
       background-position:center;
@@ -169,7 +171,7 @@
       margin:10px 0 16px;
     }
     .hero h1 span{
-      background:linear-gradient(90deg,#a78bfa,#60a5fa,#f472b6,#a78bfa);
+      background:linear-gradient(90deg,#390ebb,#60a5fa,#f472b6,#a78bfa);
       background-size:300% 100%;
       -webkit-background-clip:text;
       background-clip:text;
@@ -285,7 +287,7 @@
 
   
     .about-card{
-      background:#282649;
+      background:#28264980;
       border:1px solid var(--line);
       border-radius:18px;
       box-shadow:var(--shadow);
@@ -495,7 +497,7 @@
     }
     input:focus, textarea:focus{
       border-color:#fff;
-      background:rgba(255,255,255,.18);
+      background:rgba(207, 5, 5, 0.18);
     }
     textarea{min-height:130px; resize:vertical;}
     input::placeholder, textarea::placeholder{color:rgba(255,255,255,.75)}
